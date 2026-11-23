@@ -1,0 +1,14 @@
+version: 2
+
+# The workflows pin each action by commit, so nothing updates unless something proposes it.
+# A release is not proposed until it has been out for a week, so a bad or hijacked one is usually pulled first.
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        update-types: [minor, patch]

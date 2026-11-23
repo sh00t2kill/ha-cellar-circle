@@ -1,7 +1,7 @@
 {
   "domain": "cellar_circle",
   "name": "Cellar Circle",
-  "codeowners": [],
+  "codeowners": ["@sh00t2kill"],
   "config_flow": true,
   "dependencies": ["http"],
   "documentation": "https://github.com/sh00t2kill/ha-cellar-circle",
