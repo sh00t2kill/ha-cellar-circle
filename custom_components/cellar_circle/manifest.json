@@ -1,6 +1,7 @@
 {
   "domain": "cellar_circle",
   "name": "Cellar Circle",
+  "categories": ["productivity_information.shopping_groceries"],
   "codeowners": ["@sh00t2kill"],
   "config_flow": true,
   "dependencies": ["http"],
