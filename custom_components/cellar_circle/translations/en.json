@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Cellar Circle",
+        "description": "Home Assistant will register itself with Cellar Circle, then send you there to sign in and choose what to allow. Choose **Read only**: this integration only looks.",
+        "data": { "url": "Cellar Circle address" }
+      },
+      "reauth_confirm": {
+        "title": "Sign in to Cellar Circle again",
+        "description": "Cellar Circle no longer accepts this connection (it was disconnected, or not used for 90 days). Sign in again to keep the sensors updating."
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach Cellar Circle at that address.",
+      "api_off": "That Cellar Circle does not have its API switched on (MCP_ENABLED).",
+      "registration_failed": "Cellar Circle refused to register Home Assistant. If your Home Assistant address is not https, set up an https external URL or My Home Assistant first."
+    },
+    "abort": {
+      "already_configured": "That Cellar Circle is already connected.",
+      "reauth_successful": "Signed in again."
+    },
+    "create_entry": {}
+  },
+  "entity": {
+    "sensor": {
+      "open_items": { "name": "Waiting on me" },
+      "bottles_i_owe": { "name": "Bottles I owe" },
+      "bottles_owed_to_me": { "name": "Bottles owed to me" },
+      "money_i_owe": { "name": "Money I owe" },
+      "money_owed_to_me": { "name": "Money owed to me" },
+      "open_offers": { "name": "Open offers" },
+      "open_swaps": { "name": "Open swap listings" },
+      "my_swaps": { "name": "My swaps" }
+    }
+  }
+}
